@@ -46,12 +46,11 @@ export class UserCard extends React.Component {
 
   render() {
     const { name, age, photo, knowledge, id } = this.props;
+    const languages = knowledge.map(item => item.language).join(', ');
 
     if (this.state.shouldRedirect) {
       return <Redirect push to={`/user/${id}`} />;
     }
-
-    const languages = knowledge.map(item => item.language).join(', ');
 
     return (
       <StyledWrapper onClick={this.redirectToUserPage}>

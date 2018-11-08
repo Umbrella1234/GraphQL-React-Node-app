@@ -131,6 +131,9 @@ export class EditableUserCard extends React.Component {
 
     this.setState(({ isCountryEditable }) => ({
       isCountryEditable: false,
+      form: {
+        country: ''
+      }
     }));
   };
 
