@@ -1,0 +1,25 @@
+query AllUsers {
+  allUsers {
+    id
+    name
+    age
+    photo
+    knowledge {
+      language
+    }
+  }
+}
+
+query User($id: Int!) {
+  user(id: $id) {
+    id
+    name
+    age
+    photo
+    city
+    knowledge {
+      language
+      frameworks
+    }
+  }
+}

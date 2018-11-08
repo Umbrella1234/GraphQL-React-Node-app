@@ -1,0 +1,61 @@
+{
+  "name": "user_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "./node_modules/.bin/babel-node ./api/src/app.js --plugins=babel-plugin-inline-import --presets=env",
+    "watch": "webpack --config ./user_app/webpack/webpack.dev.js --watch --progress",
+    "build": "webpack --config ./user_app/webpack/webpack.prod.js --progress",
+    "prettify": "./node_modules/.bin/prettier --write ./user_app/src/**/*.{js,json}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umbrella1234/GraphQL-React-Node-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Umbrella1234/GraphQL-React-Node-app/issues"
+  },
+  "homepage": "https://github.com/Umbrella1234/GraphQL-React-Node-app#readme",
+  "dependencies": {
+    "apollo-boost": "^0.1.20",
+    "apollo-server-express": "^1.1.2",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.10.0",
+    "graphql-tools": "^1.2.2",
+    "react": "^16.6.0",
+    "react-apollo": "^2.2.4",
+    "react-dom": "^16.6.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-spinners": "^0.4.7",
+    "react-svg": "^6.0.24",
+    "roboto-fontface": "^0.10.0",
+    "styled-components": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-inline-import": "^2.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "prettier": "^1.14.3",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-merge": "^4.1.4"
+  }
+}

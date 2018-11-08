@@ -1,0 +1,5 @@
+mutation UpdateUserCity($userID: ID!, $city: String!) {
+  updateUserCity(userID: $userID, city: $city) {
+    id
+  }
+}
