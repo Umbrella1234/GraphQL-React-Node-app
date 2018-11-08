@@ -1,1 +1,1 @@
-# Yet-another-test-task
+Запуск: npm install, npm start из корня
